@@ -18,7 +18,7 @@ public class Conexao {
     private static Connection conn;
     private final static String driver = "org.postgresql.Driver";
     private final static String ip = "localhost/";
-    public static String dataBase = "aula";
+    public static String dataBase = "Formula01";
     public static String user = "postgres";
     public static String password = "postgres";
 
@@ -53,8 +53,8 @@ public class Conexao {
             System.out.println("Feito!");
         } catch (SQLException ex) {
             Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (ClassNotFoundException ex){
             Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    } 
 }
